@@ -1,0 +1,147 @@
+"git init: Inicia um novo repositório local.
+git clone <URL>: Clona um repositório do GitHub para o seu computador.
+git remote add origin <URL>: Adiciona um repositório remoto como origem.
+git remote -v: Lista os repositórios remotos configurados.
+git remote show <remote>: Mostra informações sobre um repositório remoto.
+git push -u origin <branch>: Envia uma branch para o repositório remoto e define como upstream.
+git pull origin <branch>: Puxa as alterações de uma branch específica do repositório remoto.
+git push origin --delete <branch>: Deleta uma branch remota.
+git push --tags: Envia todas as tags locais para o repositório remoto.
+git submodule add <URL>: Adiciona um submódulo ao repositório.
+git submodule update --init --recursive: Inicializa e atualiza submódulos recursivamente.
+git submodule foreach git pull origin master: Puxa atualizações em todos os submódulos.
+Trabalhando com Branches:
+git branch: Lista todas as branches no repositório local.
+git branch <branch>: Cria uma nova branch.
+git checkout <branch>: Muda para a branch especificada.
+git checkout -b <branch>: Cria uma nova branch e muda para ela.
+git merge <branch>: Mescla mudanças de uma branch para a branch atual.
+git branch -d <branch>: Deleta uma branch local.
+git push origin :<branch>: Deleta uma branch remota.
+git push origin <branch>: Envia uma nova branch para o repositório remoto.
+git push --all origin: Envia todas as branches locais para o repositório remoto.
+Trabalhando com Commits:
+git add <file>: Adiciona um arquivo específico ao índice.
+git add .: Adiciona todos os arquivos modificados ao índice.
+git commit -m "Mensagem": Registra as mudanças no repositório.
+git commit --amend: Adiciona mudanças ao último commit.
+git reset <file>: Remove um arquivo do índice (staging area), mantendo as mudanças.
+git reset --soft HEAD^: Desfaz o último commit, mantendo as mudanças no índice.
+git reset --hard HEAD^: Desfaz o último commit e descarta as mudanças.
+git rebase <branch>: Reorganiza commits em uma branch.
+git cherry-pick <commit>: Aplica um commit específico em outra branch.
+git log: Exibe o histórico de commits.
+git log --author=<autor>: Filtra o histórico de commits por autor.
+git log --grep=<palavra>: Filtra o histórico de commits por palavra-chave.
+git log --graph: Exibe o histórico de commits de forma gráfica.
+git blame <file>: Mostra quem modificou cada linha de um arquivo.
+Gerenciando Tags:
+git tag: Lista todas as tags no repositório.
+git tag <tag_name> <commit>: Cria uma tag leve em um commit específico.
+git tag -a <tag_name> -m "Mensagem": Cria uma tag anotada.
+git push --tags: Envia tags locais para o repositório remoto.
+git push origin :refs/tags/<tag_name>: Deleta uma tag remota.
+Resolução de Conflitos:
+git mergetool: Abre uma ferramenta para resolver conflitos de merge.
+git diff --base <file>: Mostra as diferenças em relação ao commit base.
+git checkout --ours/--theirs <file>: Escolhe a versão local/remota do arquivo em conflito.
+Trabalhando com Issues e Pull Requests:
+git issue: Lista todas as issues abertas no repositório.
+git pr: Lista todos os pull requests abertos no repositório.
+git pr checkout <PR_number>: Faz checkout de um pull request localmente.
+git pr merge <PR_number>: Realiza o merge de um pull request localmente.
+git pr close <PR_number>: Fecha um pull request localmente.
+Trabalhando com Forks:
+git fork: git init: Inicia um novo repositório local.
+git clone <URL>: Clona um repositório do GitHub para o seu computador.
+git remote add origin <URL>: Adiciona um repositório remoto como origem.
+git remote -v: Lista os repositórios remotos configurados.
+git remote show <remote>: Mostra informações sobre um repositório remoto.
+git push -u origin <branch>: Envia uma branch para o repositório remoto e define como upstream.
+git pull origin <branch>: Puxa as alterações de uma branch específica do repositório remoto.
+git push origin --delete <branch>: Deleta uma branch remota.
+git push --tags: Envia todas as tags locais para o repositório remoto.
+git submodule add <URL>: Adiciona um submódulo ao repositório.
+git submodule update --init --recursive: Inicializa e atualiza submódulos recursivamente.
+git submodule foreach git pull origin master: Puxa atualizações em todos os submódulos.
+Trabalhando com Branches:
+git branch: Lista todas as branches no repositório local.
+git branch <branch>: Cria uma nova branch.
+git checkout <branch>: Muda para a branch especificada.
+git checkout -b <branch>: Cria uma nova branch e muda para ela.
+git merge <branch>: Mescla mudanças de uma branch para a branch atual.
+git branch -d <branch>: Deleta uma branch local.
+git push origin :<branch>: Deleta uma branch remota.
+git push origin <branch>: Envia uma nova branch para o repositório remoto.
+git push --all origin: Envia todas as branches locais para o repositório remoto.
+Trabalhando com Commits:
+git add <file>: Adiciona um arquivo específico ao índice.
+git add .: Adiciona todos os arquivos modificados ao índice.
+git commit -m "Mensagem": Registra as mudanças no repositório.
+git commit --amend: Adiciona mudanças ao último commit.
+git reset <file>: Remove um arquivo do índice (staging area), mantendo as mudanças.
+git reset --soft HEAD^: Desfaz o último commit, mantendo as mudanças no índice.
+git reset --hard HEAD^: Desfaz o último commit e descarta as mudanças.
+git rebase <branch>: Reorganiza commits em uma branch.
+git cherry-pick <commit>: Aplica um commit específico em outra branch.
+git log: Exibe o histórico de commits.
+git log --author=<autor>: Filtra o histórico de commits por autor.
+git log --grep=<palavra>: Filtra o histórico de commits por palavra-chave.
+git log --graph: Exibe o histórico de commits de forma gráfica.
+git blame <file>: Mostra quem modificou cada linha de um arquivo.
+Gerenciando Tags:
+git tag: Lista todas as tags no repositório.
+git tag <tag_name> <commit>: Cria uma tag leve em um commit específico.
+git tag -a <tag_name> -m "Mensagem": Cria uma tag anotada.
+git push --tags: Envia tags locais para o repositório remoto.
+git push origin :refs/tags/<tag_name>: Deleta uma tag remota.
+Resolução de Conflitos:
+git mergetool: Abre uma ferramenta para resolver conflitos de merge.
+git diff --base <file>: Mostra as diferenças em relação ao commit base.
+git checkout --ours/--theirs <file>: Escolhe a versão local/remota do arquivo em conflito.
+Trabalhando com Issues e Pull Requests:
+git issue: Lista todas as issues abertas no repositório.
+git pr: Lista todos os pull requests abertos no repositório.
+git pr checkout <PR_number>: Faz checkout de um pull request localmente.
+git pr merge <PR_number>: Realiza o merge de um pull request localmente.
+git pr close <PR_number>: Fecha um pull request localmente.
+Trabalhando com Forks:
+git fork: Cria um fork do repositório original.
+git fetch upstream: Busca mudanças do repositório original para o fork.
+git merge upstream/<branch>: Mescla mudanças do repositório original para o fork.
+Trabalhando com Gitignore:
+git ignore add <file>: Adiciona um arquivo ao .gitignore.
+git ignore remove <file>: Remove um arquivo do .gitignore.
+git ignore list: Lista todos os padrões ignorados pelo .gitignore.
+Revisando Alterações:
+git show <commit>: Exibe as alterações introduzidas por um commit específico.
+git log -p <file>: Mostra as alterações em um arquivo ao longo do tempo.
+git log --stat: Exibe estatísticas de alterações nos commits.
+Outros Comandos Úteis:
+git reflog: Exibe o histórico de referências do Git.
+git clean -n: Mostra quais arquivos seriam removidos do repositório.
+git clean -f: Remove os arquivos não rastreados do repositório.
+git archive --format=zip --output=<filename> master: Cria um arquivo zip do repositório.
+git grep <palavra>: Busca uma palavra em todos os arquivos do repositório.
+git shortlog -sn: Exibe um resumo do número de commits por autor.
+git stash: Salva temporariamente mudanças não finalizadas.
+gh repo create <repo_name>: Cria um novo repositório usando a CLI oficial do GitHub.ria um fork do repositório original.
+git fetch upstream: Busca mudanças do repositório original para o fork.
+git merge upstream/<branch>: Mescla mudanças do repositório original para o fork.
+Trabalhando com Gitignore:
+git ignore add <file>: Adiciona um arquivo ao .gitignore.
+git ignore remove <file>: Remove um arquivo do .gitignore.
+git ignore list: Lista todos os padrões ignorados pelo .gitignore.
+Revisando Alterações:
+git show <commit>: Exibe as alterações introduzidas por um commit específico.
+git log -p <file>: Mostra as alterações em um arquivo ao longo do tempo.
+git log --stat: Exibe estatísticas de alterações nos commits.
+Outros Comandos Úteis:
+git reflog: Exibe o histórico de referências do Git.
+git clean -n: Mostra quais arquivos seriam removidos do repositório.
+git clean -f: Remove os arquivos não rastreados do repositório.
+git archive --format=zip --output=<filename> master: Cria um arquivo zip do repositório.
+git grep <palavra>: Busca uma palavra em todos os arquivos do repositório.
+git shortlog -sn: Exibe um resumo do número de commits por autor.
+git stash: Salva temporariamente mudanças não finalizadas.
+gh repo create <repo_name>: Cria um novo repositório usando a CLI oficial do GitHub.
